@@ -10,19 +10,19 @@
 
 ## 目录
 
-**基础部分**
+**part1 基础部分**
 
-- [什么是异步](./part1/01-what-is-async.md)
-- [异步和 event-loop](./part1/02-event-loop.md)
-- 事件绑定算不算异步？
-- 最原始的 callback 处理异步
+- [什么是异步](./part1-basic/01-what-is-async.md)
+- [异步和 event-loop](./part1-basic/02-event-loop.md)
+- [事件绑定算不算异步？](./part1-basic/03-event-bind.md)
 
-**jQuery的解决方案**
+**part2 jQuery的解决方案**
 
-- jQuery 对异步的思考 - 上
-- jQuery 对异步的思考 - 下
+- [jQuery-1.5 之后的 ajax](./part2-jquery/01-jquery-ajax.md)
+- [jQuery deferred](./part2-jquery/02-jquery-deferred.md)
+- [jQuery promise](./part2-jquery/03-jquery-promise.md)
 
-**Promise**
+**part3 Promise**
 
 - Promise 被 ES6 采用
 - Promise 在 ES6 中的具体应用
@@ -30,7 +30,7 @@
 - Promise 真的取代 callback 了吗？
 - 用 Q.js 库来简化 Promise 并且兼容浏览器
 
-**Generator**
+**part4 Generator**
 
 - Generator 横空出世
 - Iterator 遍历器
@@ -40,7 +40,7 @@
 - koa 中使用 Generator
 - Generator 的本质是什么？是否取代了 callback
 
-**async-await**
+**part5 async-await**
 
 - ES7 中引入 async-await
 - async-await 值不值得期待

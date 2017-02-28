@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>jquery test</title>
+</head>
+<body>
+    <p>jquery test</p>
+    
+    <script type="text/javascript" src="//cdn.bootcss.com/jquery/2.2.3/jquery.js"></script>
+    <script type="text/javascript">
+        
+        var ajax = $.ajax({
+            url: '/data/data1.json',
+            success: function () {
+                console.log('success')
+            },
+            error: function () {
+                console.log('error')
+            }
+        })
+        console.log(ajax)
+
+    </script>
+</body>
+</html>
