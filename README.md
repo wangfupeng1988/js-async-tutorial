@@ -32,13 +32,13 @@
 
 **part4 Generator**
 
-- Generator 横空出世
-- Iterator 遍历器
-- 带着 Iterator 来看 Generator
-- Generator 与异步结合
-- 使用大名鼎鼎的 co 库
-- koa 中使用 Generator
-- Generator 的本质是什么？是否取代了 callback
+- [ES6 惊现 Generator](./part4-generator/01-generator-in-es6.md)
+- [Iterator 遍历器](./part4-generator/02-iterator.md)
+- [带着 Iterator 来看 Generator](./part4-generator/03-iterator-for-generator.md)
+- [Generator 与异步结合](./part4-generator/04-generator-for-async.md)
+- [使用大名鼎鼎的 co 库](./part4-generator/05-co.md)
+- [koa 中使用 Generator](./part4-generator/06-generator-for-koa.md)
+- [Generator 的本质是什么？是否取代了 callback](./part4-generator/07-generator-callback.md)
 
 **part5 async-await**
 
