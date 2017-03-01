@@ -24,11 +24,11 @@
 
 **part3 Promise**
 
-- Promise 被 ES6 采用
-- Promise 在 ES6 中的具体应用
-- 对标一下 Promise/A+ 标准
-- Promise 真的取代 callback 了吗？
-- 用 Q.js 库来简化 Promise 并且兼容浏览器
+- [Promise 加入 ES6 标准](./part3-promise/01-promise-in-es6.md)
+- [Promise 在 ES6 中的具体应用](./part3-promise/02-promise-use.md)
+- [对标一下 Promise/A+ 规范](./part3-promise/03-promise-standard.md)
+- [Promise 真的取代 callback 了吗？](./part3-promise/04-promise-callback.md)
+- [用 Q.js 库](./part3-promise/05-promise-q.md)
 
 **part4 Generator**
 

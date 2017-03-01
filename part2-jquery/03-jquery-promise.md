@@ -2,6 +2,8 @@
 
 上一节通过一些代码演示，知道了 jquery 的`deferred`对象是解决了异步中`callback`函数的问题，但是
 
+本节使用的代码参见[这里](./test.html)
+
 ## 本节内容概述
 
 - 返回`promise`
