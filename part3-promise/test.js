@@ -1,5 +1,6 @@
 const fs = require('fs')
 const path = require('path')
+const Q = require('q')
 
 // 封装一个 Promise
 const readFilePromise = function (fileName) {
@@ -104,7 +105,7 @@ function fn4() {
 
 
 // ----- Promise.resolve() 的使用 -----
-function fnC() {
+function fn5() {
 
     // Promise.resolve('foo') 的写法等价于以下代码，
     // new Promise( resolve => resolve('foo') )
@@ -132,6 +133,29 @@ function fnC() {
     // 这里的 deferred 对象就是一个 thenable 对象
     // var jsPromise = Promise.resolve($.ajax('/whatever.json'));
 }
-fnC()
+// fn5()
+
+
+// ------ Q.nfcall 和 Q.nfapply --------
+function fn6() {
+
+    const fullFileName1 = path.resolve(__dirname, '../data/data1.json')
+    const result1 = Q.nfcall(fs.readFile, fullFileName1, 'utf-8')
+    result1.then(data => {
+        console.log(data)
+    }).catch(err => {
+        console.log(err.stack)
+    })
+
+    const fullFileName2 = path.resolve(__dirname, '../data/data2.json')
+    const result2 = Q.nfapply(fs.readFile, [fullFileName2, 'utf-8'])  // 使用 Q.nfapply 返回一个 promise
+    result2.then(data => {
+        console.log(data)
+    }).catch(err => {
+        console.log(err.stack)
+    })
+
+}
+fn6()
 
 
