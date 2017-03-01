@@ -10,16 +10,81 @@
     <script type="text/javascript" src="//cdn.bootcss.com/jquery/2.2.3/jquery.js"></script>
     <script type="text/javascript">
         
-        var ajax = $.ajax({
-            url: '/data/data1.json',
-            success: function () {
-                console.log('success')
-            },
-            error: function () {
-                console.log('error')
+        // -------- 打印 $.ajax 返回值 -------
+        function fn1() {
+            var ajax = $.ajax({
+                url: '/data/data1.json',
+                success: function () {
+                    console.log('success')
+                },
+                error: function () {
+                    console.log('error')
+                }
+            })
+            console.log(ajax)
+        }
+        // fn1()
+        
+
+        // -------- 使用 $.Deferred() --------
+        function fn2() {
+            function waitHandle() {
+                var dtd = $.Deferred()  // 创建一个 deferred 对象
+                var wait = function (dtd) {  // 要求传入一个 deferred 对象
+                    var task = function () {
+                        console.log('执行完成')
+                        dtd.resolve()  // 改变 deferred 对象的执行状态
+                    }
+                    setTimeout(task, 2000)
+                    return dtd  // 要求返回 deferred 对象
+                }
+                return wait(dtd)
             }
-        })
-        console.log(ajax)
+            var w = waitHandle()
+            w.then(function () {
+                console.log('ok 1')
+            }, function () {
+                console.log('err 1')
+            }).then(function () {
+                console.log('ok 2')
+            }, function () {
+                console.log('err 2')
+            })
+
+            // deferred 对象直接暴露出来，很容易出现问题，如下代码
+            // w.reject()
+        }
+        // fn2()
+
+        // ------- 优化 返回 promise ------
+        function fn3() {
+            
+            function waitHandle() {
+                var dtd = $.Deferred()
+                var wait = function (dtd) {
+                    var task = function () {
+                        console.log('执行完成')
+                        dtd.resolve()
+                    }
+                    setTimeout(task, 2000)
+                    return dtd.promise()  // 注意，这里返回的是 primise 而不是直接返回 deferred 对象
+                }
+                return wait(dtd)
+            }
+
+            var w = waitHandle()
+            $.when(w)
+             .then(function () { 
+                console.log('ok 1')
+             })
+             .then(function () {
+                console.log('ok 2')
+             })
+
+             // w.resolve()  // 如果这里再想执行 resolve 就会直接报错，这样就避免了以上提出的问题
+
+        }
+        fn3()
 
     </script>
 </body>
