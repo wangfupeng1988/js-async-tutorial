@@ -22,7 +22,7 @@
 - [jQuery deferred](./part2-jquery/02-jquery-deferred.md)
 - [jQuery promise](./part2-jquery/03-jquery-promise.md)
 
-**part3 Promise**
+**part3 ES6-Promise**
 
 - [Promise 加入 ES6 标准](./part3-promise/01-promise-in-es6.md)
 - [Promise 在 ES6 中的具体应用](./part3-promise/02-promise-use.md)
@@ -42,13 +42,12 @@
 
 **part5 async-await**
 
-- ES7 中引入 async-await
-- 如何在 nodejs`v6.x`版本中使用 async-await
+- [ES7 中引入 async-await](./part5-async-await/01-async-await-in-es7.md)
+- [如何在 nodejs `v6.x`版本中使用 async-await](./part5-async-await/02-use-in-node-v6.md)
 
-**最后**
+**part6 总结**
 
-- 总结
-
+- [总结](./part6-end/01-summary.md)
 
 ## 运行程序的说明
 
