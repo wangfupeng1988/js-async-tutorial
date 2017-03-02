@@ -1,6 +1,6 @@
 # 异步和 event-loop
 
-提到异步，就必须提 event-loop 。event-loop 中文翻译叫做“时间轮询”，它是能体现出单线程中异步操作是如何被执行的。
+提到异步，就必须提 event-loop 。event-loop 中文翻译叫做“事件轮询”，它是能体现出单线程中异步操作是如何被执行的。
 
 首先，**强烈大家观看一个歪果仁的视频《[what the hack is event loop](http://www.tudou.com/programs/view/ACDNKZJm6pQ/)》**，只有不到半个小时的时间，但是将的非常详细。*如果那个链接失效，访问[这里](http://pan.baidu.com/s/1c1E0rjM)（密码: xx9f）*
 
