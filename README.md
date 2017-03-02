@@ -34,17 +34,16 @@
 
 - [ES6 惊现 Generator](./part4-generator/01-generator-in-es6.md)
 - [Iterator 遍历器](./part4-generator/02-iterator.md)
-- [带着 Iterator 来看 Generator](./part4-generator/03-iterator-for-generator.md)
-- [Generator 与异步结合](./part4-generator/04-generator-for-async.md)
-- [使用大名鼎鼎的 co 库](./part4-generator/05-co.md)
+- [Generator 的具体应用](./part4-generator/03-iterator-use.md)
+- [Thunk 函数](./part4-generator/04-thunk.md)
+- [Generator 与异步操作](./part4-generator/05-generator-for-async.md)
 - [koa 中使用 Generator](./part4-generator/06-generator-for-koa.md)
 - [Generator 的本质是什么？是否取代了 callback](./part4-generator/07-generator-callback.md)
 
 **part5 async-await**
 
 - ES7 中引入 async-await
-- async-await 值不值得期待
-- async-await 的本质是什么？是否取代了 callback
+- 如何在 nodejs`v6.x`版本中使用 async-await
 
 **最后**
 
