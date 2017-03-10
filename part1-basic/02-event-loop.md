@@ -4,7 +4,7 @@
 
 首先，**强烈大家观看一个歪果仁的视频《[what the hack is event loop](http://www.tudou.com/programs/view/ACDNKZJm6pQ/)》**，只有不到半个小时的时间，但是将的非常详细。*如果那个链接失效，访问[这里](http://pan.baidu.com/s/1c1E0rjM)（密码: xx9f）*
 
-其次，再结合阮一峰老师的《[什么是event loop](http://www.ruanyifeng.com/blog/2013/10/event_loop.html)》一起看一下。将这两个看完就基本了解 event loop 了
+其次，再结合阮一峰老师的《[什么是event loop](http://www.ruanyifeng.com/blog/2014/10/event-loop.html)》一起看一下。将这两个看完就基本了解 event loop 了
 
 最后，event-loop 是一块内容比较独立的技术性知识，它是什么样子就是什么样子，讲解起来可变通性非常小。因此，本节说一下我对 event-loop 的理解和体会
 
@@ -33,14 +33,6 @@ console.log('line 3')
 - 第五步，执行完毕之后，再实时查看暂存位置中是否还有未执行的异步回调。
 
 以上只拿了`setTimeout`举例子，但是对于网络请求、IO操作、事件绑定道理都是一样的。**如果我讲的简单例子你还是看不懂，一定要去看文章最初提到的《what the hack is event loop》视频，重要重要！！！**
-
-## 核心概念
-
-理解 event-loop 的核心概念是要明白以下几点：
-
-- **main-stack** 和 **call-stack** 的区别
-- 执行 **main-stack** 时将异步操作暂存到 **call-stack**
-- **main-stack** 执行完成之后，实时检查 **call-stack** 的任务是否应该被拿到 **main-stack** 中来执行
 
 
 ## 思考三个问题

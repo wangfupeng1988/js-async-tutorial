@@ -32,7 +32,7 @@
 
 **part4 Generator**
 
-- [ES6 惊现 Generator](./part4-generator/01-generator-in-es6.md)
+- [ES6 中的 Generator](./part4-generator/01-generator-in-es6.md)
 - [Iterator 遍历器](./part4-generator/02-iterator.md)
 - [Generator 的具体应用](./part4-generator/03-iterator-use.md)
 - [Thunk 函数](./part4-generator/04-thunk.md)

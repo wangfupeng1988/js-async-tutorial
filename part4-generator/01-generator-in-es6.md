@@ -1,4 +1,4 @@
-# ES6 惊现 Generator
+# ES6 中的 Generator
 
 在 ES6 出现之前，基本都是各式各样类似`Promise`的解决方案来处理异步操作的代码逻辑，但是 ES6 的`Generator`却给异步操作又提供了新的思路，马上就有人给出了如何用`Generator`来更加优雅的处理异步操作。
 
