@@ -52,7 +52,7 @@ g.next('ccc') // value: undefined, done: true
 
 ## `for...of`的应用示例
 
-针对`for...of`在`Iterator`对象的操作之前已经介绍过了，不过这里用一个非常好的例子来展示一下。用简单几行代码实现斐波那契数列。通过之前学过的`Generator`知识，应该不能解读这份代码。
+针对`for...of`在`Iterator`对象的操作之前已经介绍过了，不过这里用一个非常好的例子来展示一下。用简单几行代码实现斐波那契数列。通过之前学过的`Generator`知识，应该不难解读这份代码。
 
 ```javascript
 function* fibonacci() {
