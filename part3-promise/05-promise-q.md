@@ -108,7 +108,7 @@ const readFilePromise = function (fileName) {
 const readFilePromise = Q.denodeify(fs.readFile)
 ```
 
-`Q.denodeif`就是一键将`fs.readFile`这种有回调函数作为参数的异步操作封装成一个`promise`生成器，非常方便！
+`Q.denodeify`就是一键将`fs.readFile`这种有回调函数作为参数的异步操作封装成一个`promise`生成器，非常方便！
 
 ## 使用`Q.all`和`Q.any`
 
