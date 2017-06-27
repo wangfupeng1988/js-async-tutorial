@@ -70,6 +70,10 @@ $ http-server -p 8881
 
 然后浏览器访问`http://localhost:8881/xxx/xxx.html`即可
 
+## 案例作者的教程
+
+《[React.js模拟大众点评webapp](http://coding.imooc.com/class/99.html)》《[前端JS基础面试题讲解](http://coding.imooc.com/class/115.html)》《[zepto设计和源码分析](http://www.imooc.com/learn/745)》
+
 ## 求打赏
 
 如果你看完了，感觉还不错，欢迎给我打赏 ———— 以激励我更多输出优质内容
