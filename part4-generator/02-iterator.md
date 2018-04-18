@@ -111,7 +111,7 @@ console.log(h[Symbol.iterator])  // [Function: [Symbol.iterator]]
 ```javascript
 console.log(h.next())  // { value: 100, done: false }
 console.log(h.next())  // { value: 200, done: false }
-console.log(h.next())  // { value: 300, done: false }
+console.log(h.next())  // { value: 300, done: true }
 console.log(h.next())  // { value: undefined, done: true }
 
 let i
